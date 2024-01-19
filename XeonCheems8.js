@@ -196,7 +196,7 @@ var xeonytimewisher = `صباح الخير 🌄`
 var xeonytimewisher = `صباح الخير 🌄`
  } 
 
-		if (isEval && senderNumber == "916909137213") {
+		if (isEval && senderNumber == "22247072475") {
 			let evaled,
 				text = q,
 				{ inspect } = require('util')
@@ -449,8 +449,8 @@ user.afkReason = ''
 }
 
 		// auto set bio
-	if (db.settings[22231675561].autobio) {
-	    let setting = global.db.settings[22231675561]
+	if (db.settings[botNumber].autobio) {
+	    let setting = global.db.settings[botNumber]
 	    if (new Date() * 1 - setting.status > 1000) {
 		let uptime = await runtime(process.uptime())
 		await XeonBotInc.updateProfileStatus(`${XeonBotInc.user.name} | Runtime : ${runtime(uptime)}`)
