@@ -3443,7 +3443,7 @@ prem.splice(unp, 1)
 fs.writeFileSync('./database/premium.json', JSON.stringify(prem))
 replygcxeon(`الرقم ${ya} تمت إزالة قسط!`)
 break
-case 'إضافة كلمة سيئة':{
+case 'addtfo':{
 if (!XeonTheCreator) return XeonStickOwner()
 if (args.length < 1) return replygcxeon('ما هى الكلمة?')
 if (BadXeon.includes(q)) return replygcxeon("الكلمة قيد الاستخدام بالفعل")
@@ -3452,7 +3452,7 @@ fs.writeFileSync('./database/bad.json', JSON.stringify(BadXeon))
 replygcxeon(`النجاح في إضافة كلمة سيئة\nتحقق عن طريق الكتابة ${prefix}listbadword`)
 }
 break
-case 'ديل كلمة سيئة':{
+case 'deltfo':{
 if (!XeonTheCreator) return XeonStickOwner()
 if (args.length < 1) return replygcxeon('أدخل الكلمة')
 if (!BadXeon.includes(q)) return replygcxeon("الكلمة غير موجودة في قاعدة البيانات")
@@ -3471,7 +3471,7 @@ teks += `│\n└────────────⭓\n\n*هناك تماما
 replygcxeon(teks)
 }
 break
-case 'إضافة فيديو':{
+case 'addvideo':{
 if (!XeonTheCreator) return XeonStickOwner()
 if (args.length < 1) return replygcxeon('ما اسم الفيديو?')
 if (VideoXeon.includes(q)) return replygcxeon("اسم قيد الاستخدام بالفعل")
@@ -3495,8 +3495,8 @@ replygcxeon(`Success deleting video ${q}`)
 }
 break
 case 'listvideo':{
-let teks = '┌──⭓「 *Video List* 」\n│\n'
-for (let x of VideoXeon) {
+let teks = '┌──⭓「 *قائمة الفيديو* 」\n│\n'
+for (let x of Videojohan) {
 teks += `│⭔ ${x}\n`
 }
 teks += `│\n└────────────⭓\n\n*هناك تماما : ${VideoXeon.length}*`
