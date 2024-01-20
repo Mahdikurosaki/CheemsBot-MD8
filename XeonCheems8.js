@@ -351,7 +351,7 @@ ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
 
-${isWin ? `@${winner.split('@')[0]} Won!` : isTie ? `Game Over` : `Turn ${['❌', '⭕'][1 * room13.game._currentTurn]} (@${room13.game.currentTurn.split('@')[0]})`}
+${isWin ? `@${winner.split('@')[0]} Won!` : isTie ? `انتهت اللعبة` : `Turn ${['❌', '⭕'][1 * room13.game._currentTurn]} (@${room13.game.currentTurn.split('@')[0]})`}
 ❌: @${room13.game.playerX.split('@')[0]}
 ⭕: @${room13.game.playerO.split('@')[0]}
 
@@ -386,7 +386,7 @@ Type *surrender* to surrender and admit defeat`
 @${roof.p.split`@`[0]} and 
 @${roof.p2.split`@`[0]}
 
-Please choose a suit in the respective chat"
+يرجى اختيار بدلة في الدردشة المعنية"
 click https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] })
 	    if (!roof.pilih) XeonBotInc.sendText(roof.p, `الرجاء التحديد \n\صخر🗿\nورق📄\nمقص✂️`, m)
 	    if (!roof.pilih2) XeonBotInc.sendText(roof.p2, `Please Select \n\nصخر🗿\nورق📄\nمقص✂️`, m)
@@ -606,7 +606,7 @@ jpegThumbnail: defaultpp } } }
 
 const banRep = () => {
 XeonBotInc.sendMessage(m.chat, {
-text:`Sorry you've been banned, please chat @${creator.split("@")[0]} to unban`,
+text:`آسف لقد تم حظرك، من فضلك دردش @${creator.split("@")[0]} لإلغاء الحظر`,
 mentions: [creator],
 },
 {
@@ -688,7 +688,7 @@ let Lehd = await gHz.savefrom(Link)
 let ghd = await reSize(Lehd.thumb, 300, 300)
 let ghed = await ytdl.getInfo(Link)
 let gdyr = await XeonBotInc.sendMessage(from, {image: { url: Lehd.thumb } , caption: `Channel Name : ${ghed.player_response.videoDetails.author}
-Channel Link : https://youtube.com/channel/${ghed.player_response.videoDetails.channelId}
+رابط القناة : https://youtube.com/channel/${ghed.player_response.videoDetails.channelId}
 Title : ${Lehd.meta.title}
 Duration : ${Lehd.meta.duration}
 Desc : ${ghed.player_response.videoDetails.shortDescription}`}, { quoted : m })
@@ -1517,25 +1517,25 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
    │✑  الرجاء كتابة *MENU*
    │✑  منح *BELOW*
 ┌└─────────────┈ ⳹
-│❏.كل القائمة
-│❏.قائمة التنزيل
-│❏.قائمة ممتعة
-│❏.aimenu
-│❏.قائمة المجموعة
-│❏.قائمة المالك
-│❏.القائمة الضوئية
-│❏.القائمة النصية للمحترفين
-│❏.ephoto360menu
-│❏.قائمة الأنمي
-│❏.nsfwmenu
-│❏.قائمة الصور العشوائية
-│❏.قائمة فيديو عشوائية
-│❏.قائمة الملصقات
-│❏.databasemenu
-│❏.قائمة الملاحقة
-│❏.قائمة الأخطاء
-│❏.القائمة الأخرى
-└─────────────────┈ ⳹`
+│❏.كل القائمة (القائمة)
+│❏.قائمة التنزيل (م2)
+│❏.قائمة ممتعة(م18)
+│❏.aimenu (م3)
+│❏.قائمة المجموعة(م4)  
+│❏.قائمة المالك(م5) 
+│❏.القائمة الضوئية(م6)
+│❏.القائمة النصية للمحترفين(م7)
+│❏.ephoto360menu(م8)
+│❏.قائمة الأنمي (م9)
+│❏.nsfwmenu (م10)
+│❏.قائمة الصور العشوائية(م11)
+│❏.قائمة فيديو عشوائية(م12)
+│❏.قائمة الملصقات(م13)
+│❏.databasemenu(م14)
+│❏.قائمة الملاحقة(م15) 
+│❏.قائمة الأخطاء(م16)
+│❏.القائمة الأخرى(م17)
+└────────المطور=يوهان─────────┈ ⳹`
             let ments = [ownernya, me, mark]        
            XeonBotInc.sendMessage(from, { 
 text: xeonezy,
@@ -1578,7 +1578,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'قائمة المالك': {
+case 'م5': {
 var unicorn = await getBuffer(picak+'قائمة المالك')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${ownermenu(prefix)}`,
@@ -1599,7 +1599,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'القائمة الأخرى': {
+case 'م17': {
 	var unicorn = await getBuffer(picak+'القائمة الأخرى')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${othermenu(prefix)}`,
@@ -1620,7 +1620,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'قائمة التنزيل': {
+case 'م2 ': {
 var unicorn = await getBuffer(picak+'قائمة التنزيل')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${downloadmenu(prefix)}`,
@@ -1641,7 +1641,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'قائمة المجموعة': {
+case 'م4': {
 var unicorn = await getBuffer(picak+'قائمة المجموعة')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${groupmenu(prefix)}`,
@@ -1662,7 +1662,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'قائمة ممتعة': {
+case 'م18 ': {
 var unicorn = await getBuffer(picak+'قائمة ممتعة')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${funmenu(prefix)}`,
