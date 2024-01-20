@@ -6260,6 +6260,30 @@ replygcxeon("Sorry, there seems to be an error :"+ error.message);
 }
 }
 break
+// قم بالحصول على عنصر الفيديو
+var videoElement = document.getElementById("myVideo");
+
+// قيمة المتغير التي تحدد الفيديو المراد عرضه
+var command = "play"; // يمكن تغييرها بناءً على احتياجاتك
+
+// استخدام switch لتوجيه الأوامر
+switch (command) {
+  case "play":
+    videoElement.play();
+    break;
+  case "pause":
+    videoElement.pause();
+    break;
+  case "edit":
+    // استبدل هذا برابط الفيديو الجديد الذي تريد عرضه
+    var newVideoSource = "https://telegra.ph/file/d5abd535b72d8f07bd523.mp4";
+    videoElement.src = newVideoSource;
+    videoElement.load(); // قم بإعادة تحميل الفيديو
+    break;
+  // يمكنك إضافة حالات إضافية حسب الحاجة
+  default:
+    console.log("Command not recognized");
+}
 case "aimage":
 try {
 if (global.keyopenai === '') return replygcxeon("Apikey limit exceeded");
