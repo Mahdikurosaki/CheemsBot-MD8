@@ -1322,7 +1322,7 @@ emoji.get(satu)
 XeonBotInc.sendMessage(from, { caption: mess.success, image: {url: emoji.images[dua].url} }, {quoted:m})
 })
 } catch (e) {
-m.reply("Emoji error, please enter another emoji\nNOTE : Just enter 1 emoji")
+m.reply("خطأ في الرموز التعبيرية، يرجى إدخال رمز تعبيري آخر\nلاحظ : فقط أدخل رمز تعبيري واحد")
 }
 }
 
@@ -1492,7 +1492,7 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             xeonezy = `┌─❖
 │ أهلاً 👋 
 └┬❖  ${pushname} 
-┌┤✑  ${xeonytimewisher} 😄
+┌┤✑  ${xeonytimewisher} 🥹
 │└────────────┈ ⳹
 │
 └─ معلومات بوت        
@@ -1683,7 +1683,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'قائمة الملاحقة': {
+case 'م15': {
 var unicorn = await getBuffer(picak+'قائمة الملاحقة')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${stalkermenu(prefix)}`,
@@ -1704,7 +1704,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'قائمة الصور العشوائية': {
+case 'م11': {
 var unicorn = await getBuffer(picak+'قائمة الصور العشوائية')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${randphotomenu(prefix)}`,
@@ -1725,7 +1725,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'قائمة فيديو عشوائية': {
+case 'م12': {
 var unicorn = await getBuffer(picak+'قائمة فيديو عشوائية')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${randvideomenu(prefix)}`,
@@ -1746,7 +1746,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'القائمة النصية للمحترفين': {
+case 'م7': {
 var unicorn = await getBuffer(picak+'القائمة النصية للمحترفين')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${textpromenu(prefix)}`,
@@ -1767,7 +1767,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'القائمة الضوئية': {
+case 'م6': {
 var unicorn = await getBuffer(picak+'القائمة الضوئية')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${photooxymenu(prefix)}`,
@@ -1830,7 +1830,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'قائمة الأنمي': {
+case 'م9': {
 var unicorn = await getBuffer(picak+'قائمة الأنمي')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${animemenu(prefix)}`,
@@ -1851,7 +1851,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'قائمة الملصقات': {
+case 'م13': {
 var unicorn = await getBuffer(picak+'قائمة الملصقات')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${stickermenu(prefix)}`,
@@ -1893,7 +1893,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'aimenu': {
+case 'م3': {
 var unicorn = await getBuffer(picak+'افتح قائمة الذكاء الاصطناعي')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${aimenu(prefix)}`,
