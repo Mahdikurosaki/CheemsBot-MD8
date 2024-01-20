@@ -3496,7 +3496,7 @@ replygcxeon(`Success deleting video ${q}`)
 break
 case 'listvideo':{
 let teks = '┌──⭓「 *قائمة الفيديو* 」\n│\n'
-for (let x of Videojohan) {
+for (let x of VideoXeon) {
 teks += `│⭔ ${x}\n`
 }
 teks += `│\n└────────────⭓\n\n*هناك تماما : ${VideoXeon.length}*`
