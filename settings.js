@@ -40,7 +40,7 @@ global.themeemoji = '🪀'
 global.wm = "JOHAN Bot Inc."
 global.botscript = 'https://github.com/DGXeon/CheemsBot-MD6' //script link
 global.packname = "Sticker By JOHAN"
-global.author = "🦄드림 가이 JOHAN\n\n"
+global.author = "BOT JOHAN\n\n"
 global.creator = "22247072475@s.whatsapp.net"
 global.prefa = ['','!','.','#','&']
 global.sessionName = 'session'
@@ -61,7 +61,7 @@ global.flasmurf = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutp
 
 //messages
 global.mess = {
-    success: 'Here you go!', 
+    success: 'ها أنت ذا!', 
 }
 
 let file = require.resolve(__filename)
