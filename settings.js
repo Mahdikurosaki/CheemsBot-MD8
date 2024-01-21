@@ -21,7 +21,7 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.owner = ['22247072475'] //ur owner number
+global.owner = ['‪22237979043‬'] //ur owner number
 global.ownernomer = "22247072475" //ur owner number2
 global.ownername = "JOHAN" //ur owner name
 global.ytname = "YT: JOHAN" //ur yt chanel name
@@ -30,7 +30,7 @@ global.location = "MAURITANIA:NAUKCHOOUT:TVZ" //ur location
 
 //new
 global.botname = "JOHAN-BOT"
-global.ownernumber = '22247072475'
+global.ownernumber = '22237979043'
 global.ownername = 'JOHAN BOT'
 global.ownerNumber = ["22247072475@s.whatsapp.net"]
 global.ownerweb = "https://youtube.com/@JOHAN32240"
@@ -41,7 +41,7 @@ global.wm = "JOHAN Bot Inc."
 global.botscript = 'https://github.com/DGXeon/CheemsBot-MD6' //script link
 global.packname = "Sticker By JOHAN"
 global.author = "BOT JOHAN\n\n"
-global.creator = "22247072475@s.whatsapp.net"
+global.creator = "22237979043@s.whatsapp.net"
 global.prefa = ['','!','.','#','&']
 global.sessionName = 'session'
 global.hituet = 0
