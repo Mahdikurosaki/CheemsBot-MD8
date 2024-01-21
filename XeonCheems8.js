@@ -6260,11 +6260,7 @@ replygcxeon("Sorry, there seems to be an error :"+ error.message);
 }
 }
 break
-  case "edit":
-    // استبدل هذا برابط الفيديو الجديد الذي تريد عرضه
-    var newVideoSource = "https://telegra.ph/file/d5abd535b72d8f07bd523.mp4";
-break
-  case "aimage":
+case "aimage":
 try {
 if (global.keyopenai === '') return replygcxeon("Apikey limit exceeded");
 if (!q) return replygcxeon(`Generate image from AI.\n\nExample:\n${prefix + command} man riding horse`)
