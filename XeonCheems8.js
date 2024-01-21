@@ -6263,8 +6263,6 @@ break
   case "edit":
     // استبدل هذا برابط الفيديو الجديد الذي تريد عرضه
     var newVideoSource = "https://telegra.ph/file/d5abd535b72d8f07bd523.mp4";
-    videoElement.src = newVideoSource;
-    videoElement.load(); // قم بإعادة تحميل الفيديو
 break
   case "aimage":
 try {
