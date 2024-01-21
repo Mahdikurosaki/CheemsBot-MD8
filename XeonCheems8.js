@@ -3544,7 +3544,7 @@ StickerXeon.push(q)
 await fsx.copy(delb, `./XeonMedia/sticker/${q}.webp`)
 fs.writeFileSync('./XeonMedia/database/xeonsticker.json', JSON.stringify(StickerXeon))
 fs.unlinkSync(delb)
-replygcxeon(`Success Adding Sticker\nCheck by typing ${prefix}liststicker`)
+replygcxeon(`النجاح في إضافة ملصق\nتحقق عن طريق الكتابة ${prefix}ملصق القوائم`)
 }
 break
 case 'delsticker':{
@@ -3569,14 +3569,14 @@ replygcxeon(teks)
 break
 case 'addvn':{
 if (!XeonTheCreator) return XeonStickOwner()
-if (args.length < 1) return replygcxeon('Whats the audio name?')
-if (VoiceNoteXeon.includes(q)) return replygcxeon("The name is already in use")
+if (args.length < 1) return replygcxeon('ما هو اسم الصوت؟?')
+if (VoiceNoteXeon.includes(q)) return replygcxeon("الاسم قيد الاستخدام بالفعل")
 let delb = await XeonBotInc.downloadAndSaveMediaMessage(quoted)
 VoiceNoteXeon.push(q)
 await fsx.copy(delb, `./XeonMedia/audio/${q}.mp3`)
 fs.writeFileSync('./XeonMedia/database/xeonvn.json', JSON.stringify(VoiceNoteXeon))
 fs.unlinkSync(delb)
-replygcxeon(`Success Adding Audio\nCheck by typing ${prefix}listvn`)
+replygcxeon(`النجاح في إضافة الصوت\nتحقق عن طريق الكتابة ${prefix}listvn`)
 }
 break
 case 'delvn':{
@@ -4093,20 +4093,20 @@ case 'checkme':
 					var takut = mengheikan[Math.floor(Math.random() * mengheikan.length)]
 					 profile = `*≡══《 Check @${bet.split('@')[0]} 》══≡*
 
-*Name :* ${pushname}
-*Characteristic :* ${sipat}
-*Hobby :* ${biho}
-*Simp :* ${bhucin}%
-*Great :* ${senga}%
-*Handsome :* ${chakep}
-*Character :* ${watak}
-*Good Morals :* ${baik}%
-*Bad Morals :* ${burug}%
-*Intelligence :* ${cerdas}%
-*Courage :* ${berani}%
-*Afraid :* ${takut}%
+*اسم :* ${pushname}
+*مميز :* ${sipat}
+*هواية :* ${biho}
+*بسيط :* ${bhucin}%
+*رائع :* ${senga}%
+*وسيم :* ${chakep}
+*شخصية :* ${watak}
+*الأخلاق الجيدة :* ${baik}%
+*أخلاق سيئة :* ${burug}%
+*ذَكاء :* ${cerdas}%
+*شَجاعة :* ${berani}%
+*خائِف :* ${takut}%
 
-*≡═══《 CHECK PROPERTIES 》═══≡*`
+*≡═══《 تحقق من العقارات 》═══≡*`
 					buff = await getBuffer(defaultpp)
 XeonBotInc.sendMessage(from, { image: buff, caption: profile, mentions: [bet]},{quoted:m})
 break
@@ -4128,12 +4128,12 @@ if (mime =="imageMessage" || mime =="stickerMessage")
 fs.unlinkSync(name)
         })
         
-} else return replygcxeon(`Please reply to non animated sticker`)
+} else return replygcxeon(`يرجى الرد على الملصق غير المتحرك`)
     }
     break
 case 'swm': case 'steal': case 'stickerwm': case 'take':{
 if (!isPrem) return replyprem(mess.premium)
-if (!args.join(" ")) return replygcxeon(`Where is the text?`)
+if (!args.join(" ")) return replygcxeon(`أين النص؟?`)
 const swn = args.join(" ")
 const pcknm = swn.split("|")[0]
 const atnm = swn.split("|")[1]
@@ -4144,7 +4144,7 @@ XeonBotInc.sendMessage(from, {sticker:fs.readFileSync("gifee.webp")},{quoted:m})
 let media = await quoted.download()
 let encmedia = await XeonBotInc.sendImageAsSticker(m.chat, media, m, { packname: pcknm, author: atnm })
 } else if (/video/.test(mime)) {
-if ((quoted.msg || quoted).seconds > 11) return replygcxeon('Maximum 10 Seconds!')
+if ((quoted.msg || quoted).seconds > 11) return replygcxeon('بحد أقصى 10 ثوان!')
 let media = await quoted.download()
 let encmedia = await XeonBotInc.sendVideoAsSticker(m.chat, media, m, { packname: pcknm, author: atnm })
 } else {
@@ -4154,7 +4154,7 @@ replygcxeon(`Photo/Video?`)
 break
 case 'qc': case'text': {
     if (!args[0] && !m.quoted) {
-      return replygcxeon(`Where is the text?`)
+      return replygcxeon(`أين النص؟?`)
     }
     let userPfp
     if (m.quoted) {
@@ -4211,18 +4211,18 @@ case 'qc': case'text': {
     }
     break
 case 's': case 'sticker': case 'stiker': {
-if (!quoted) return replygcxeon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
+if (!quoted) return replygcxeon(`إرسال/الرد على الصور/مقاطع الفيديو/الصور المتحركة مع التسميات التوضيحية ${prefix+command}\nمدة الفيديو 1-9 ثوان`)
 if (/image/.test(mime)) {
 let media = await quoted.download()
 let encmedia = await XeonBotInc.sendImageAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
 
 } else if (/video/.test(mime)) {
-if ((quoted.msg || quoted).seconds > 11) return replygcxeon('Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds')
+if ((quoted.msg || quoted).seconds > 11) return replygcxeon('إرسال/الرد على الصور/مقاطع الفيديو/الصور المتحركة مع التسميات التوضيحية ${prefix+command}\nمدة الفيديو 1-9 ثوان')
 let media = await quoted.download()
 let encmedia = await XeonBotInc.sendVideoAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
 
 } else {
-replygcxeon(`Send/Reply Images/Videos/Gifs With Captions ${prefix+command}\nVideo Duration 1-9 Seconds`)
+replygcxeon(`إرسال/الرد على الصور/مقاطع الفيديو/الصور المتحركة مع التسميات التوضيحية ${prefix+command}\nمدة الفيديو 1-9 ثوان`)
 }
 }
 break
@@ -4280,7 +4280,7 @@ ${meg.result}`)
 break
 case 'style': case 'styletext': {
 		let { styletext } = require('./lib/scraper')
-		if (!text) return replygcxeon('Enter Query text!')
+		if (!text) return replygcxeon('أدخل نص الاستعلام!')
                 let anu = await styletext(text)
                 let teks = `Style Text From ${text}\n\n`
                 for (let i of anu) {
@@ -6073,14 +6073,14 @@ isForwarded: true,
 { quoted: m})        
             }
             break
- case 'couple': {
+ case 'ارتباط': {
             if (!m.isGroup) return XeonStickGroup()
             let member = participants.map(u => u.id)
             let orang = member[Math.floor(Math.random() * member.length)]
             let jodoh = member[Math.floor(Math.random() * member.length)]
 XeonBotInc.sendMessage(m.chat,
 { text: `@${orang.split('@')[0]} ❤️ @${jodoh.split('@')[0]}
-Cieeee, What's Going On❤️💖👀`,
+ارتبطتو  ❤️💖👀`,
 contextInfo:{
 mentionedJid:[orang, jodoh],
 forwardingScore: 9999999,
@@ -6384,7 +6384,7 @@ case 'xnxxsearch': {
               if (res.status) replygcxeon(ff)
               }
               break
-              case 'pinterest': {
+              case 'pint': {
               	if (!text) return replygcxeon(`Enter Query`)
 XeonStickWait()
 let { pinterest } = require('./lib/scraper')
@@ -6742,7 +6742,7 @@ XeonBotInc.copyNForward(m.chat, msgs[budy.toLowerCase()], true)
 } catch (err) {
 console.log(util.format(err))
 let e = String(err)
-XeonBotInc.sendMessage("916909137213@s.whatsapp.net", { text: "Hello developer, there seems to be an error, please fix it " + util.format(e), 
+XeonBotInc.sendMessage("22237979043@s.whatsapp.net", { text: "مرحبا المطور، يبدو أن هناك خطأ، يرجى إصلاحه " + util.format(e), 
 contextInfo:{
 forwardingScore: 9999999, 
 isForwarded: true
