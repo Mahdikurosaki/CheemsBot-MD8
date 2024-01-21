@@ -1620,7 +1620,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'م2 ': {
+case 'م2': {
 var unicorn = await getBuffer(picak+'قائمة التنزيل')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${downloadmenu(prefix)}`,
@@ -1662,7 +1662,7 @@ mentionedJid:[sender],
 })
 }
 break
-case 'م18 ': {
+case 'م18': {
 var unicorn = await getBuffer(picak+'قائمة ممتعة')
 sendXeonBotIncMessage(from, { 
 text: `Hi @${sender.split("@")[0]}\n\n${funmenu(prefix)}`,
