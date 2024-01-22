@@ -4091,7 +4091,7 @@ case 'checkme':
 					var cerdas = cerdhas[Math.floor(Math.random() * cerdhas.length)]
 					var berani = berhani[Math.floor(Math.random() * berhani.length)]
 					var takut = mengheikan[Math.floor(Math.random() * mengheikan.length)]
-					 profile = `*≡══《 Check @${bet.split('@')[0]} 》══≡*
+					 profile = `*≡══《 تحقق @${bet.split('@')[0]} 》══≡*
 
 *اسم :* ${pushname}
 *مميز :* ${sipat}
