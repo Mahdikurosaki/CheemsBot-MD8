@@ -3972,95 +3972,95 @@ case 'tomp4': case 'tovideo': {
                             break
        case 'truth':
               const truth =[
-    "Have you ever liked anyone? How long?",
-    "If you can or if you want, which gc/outside gc would you make friends with? (maybe different/same type)",
-    "apa ketakutan terbesar kamu?",
-    "Have you ever liked someone and felt that person likes you too?",
-    "What is the name of your friend's ex-girlfriend that you used to secretly like?",
-    "Have you ever stolen money from your father or mom? The reason?",
-    "What makes you happy when you're sad?",
-    "Ever had a one sided love? if so who? how does it feel bro?", 
-    "been someone's mistress?",
-    "the most feared thing",
-    "Who is the most influential person in your life?",
-    "what proud thing did you get this year", 
-    "Who is the person who can make you awesome", 
-    "Who is the person who has ever made you very happy?", 
-    "Who is closest to your ideal type of partner here", 
-    "Who do you like to play with??", 
-    "Have you ever rejected people? the reason why?",
-    "Mention an incident that made you hurt that you still remember", 
-    "What achievements have you got this year??",
-    "What's your worst habit at school??",
-    "What song do you sing most in the shower",
-    "Have you ever had a near-death experience",
-    "When was the last time you were really angry. Why?",
-    "Who is the last person who called you",
-    "Do you have any hidden talents, What are they",
-    "What word do you hate the most?",
-    "What is the last YouTube video you watched?",
-    "What is the last thing you Googled",
-    "Who in this group would you want to swap lives with for a week",
-    "What is the scariest thing thats ever happened to you",
-    "Have you ever farted and blamed it on someone else",
-    "When is the last time you made someone else cry",
-    "Have you ever ghosted a friend",
-    "Have you ever seen a dead body",
-    "Which of your family members annoys you the most and why",
-    "If you had to delete one app from your phone, which one would it be",
-    "What app do you waste the most time on",
-    "Have you ever faked sick to get home from school",
-    "What is the most embarrassing item in your room",
-    "What five items would you bring if you got stuck on a desert island",
-    "Have you ever laughed so hard you peed your pants",
-    "Do you smell your own farts",
-    "have u ever peed on the bed while sleeping ??",
-    "What is the biggest mistake you have ever made",
-    "Have you ever cheated in an exam",
-    "What is the worst thing you have ever done",
-    "When was the last time you cried",
-    "whom do you love the most among ur parents", 
-    "do u sometimes put ur finger in ur nosetril?", 
-    "who was ur crush during the school days",
-    "tell honestly, do u like any boy in this grup",
-    "have you ever liked anyone? how long?",
-    "do you have gf/bf','what is your biggest fear?",
-    "have you ever liked someone and felt that person likes you too?",
-    "What is the name of your ex boyfriend of your friend that you once liked quietly?",
-    "ever did you steal your mothers money or your fathers money",
-    "what makes you happy when you are sad",
-    "do you like someone who is in this grup? if you then who?",
-    "have you ever been cheated on by people?",
-    "who is the most important person in your life",
-    "what proud things did you get this year",
-    "who is the person who can make you happy when u r sad",
-    "who is the person who ever made you feel uncomfortable",
-    "have you ever lied to your parents",
-    "do you still like ur ex",
-    "who do you like to play together with?",
-    "have you ever stolen big thing in ur life? the reason why?",
-    "Mention the incident that makes you hurt that you still remember",
-    "what achievements have you got this year?",
-    "what was your worst habit at school?",
-    "do you love the bot creator, xeon?ðŸ¤£",
-    "have you ever thought of taking revenge from ur teacher?",
-    "do you like current prime minister of ur country",
-    "you non veg or veg",
-    "if you could be invisible, what is the first thing you would do",
-    "what is a secret you kept from your parents",
-    "Who is your secret crush",
-    "whois the last person you creeped on social media",
-    "If a genie granted you three wishes, what would you ask for",
-    "What is your biggest regret",
-    "What animal do you think you most look like",
-    "How many selfies do you take a day",
-    "What was your favorite childhood show",
-    "if you could be a fictional character for a day, who would you choose",
-    "whom do you text the most",
-    "What is the biggest lie you ever told your parents",
-    "Who is your celebrity crush",
-    "Whats the strangest dream you have ever had",
-    "do you play pubg, if you then send ur id number"
+    "هل أحببت أحداً من قبل؟ إلى متى؟"،
+    "إذا كنت تستطيع أو إذا أردت، ما هو gc/خارج gc الذي ستقيم معه صداقات؟ (ربما مختلف/نفس النوع)"،
+    "Pa ketakutan terbesar kamu؟"،
+    "هل سبق لك أن أحببت شخصًا ما وشعرت أن هذا الشخص معجب بك أيضًا؟",
+    "ما اسم حبيبة صديقك السابقة التي كنت تحبها سراً؟",
+    "هل سبق لك أن سرقت أموالاً من والدك أو والدتك؟ السبب؟",
+    "ما الذي يجعلك سعيدا عندما تكون حزينا؟",
+    "هل كان لديك حب من طرف واحد؟ إذا كان الأمر كذلك فمن؟ كيف تشعر يا أخي؟"،
+    "هل كانت عشيقة شخص ما؟"،
+    "الشيء الأكثر رعبا"،
+    "من هو الشخص الأكثر تأثيرا في حياتك؟",
+    "ما هو الشيء الذي تفتخر به هذا العام"
+    "من هو الشخص الذي يمكنه أن يجعلك رائعًا"
+    "من هو الشخص الذي جعلك سعيدًا جدًا؟",
+    "من هو الأقرب إلى نوع الشريك المثالي هنا"،
+    "مع من تحب اللعب؟؟"
+    "هل سبق لك أن رفضت الناس؟ ما السبب؟"،
+    "اذكر حادثة سببت لك الأذى ومازلت تتذكرها"
+    "ما هي الإنجازات التي حصلت عليها هذا العام؟؟"،
+    "ما هي أسوأ عادتك في المدرسة؟؟"
+    "ما هي الأغنية التي تغنيها أكثر في الحمام"،
+    "هل سبق لك أن مررت بتجربة الإقتراب من الموت"؟
+    "متى كانت آخر مرة كنت فيها غاضبًا حقًا. لماذا؟"،
+    "من هو آخر شخص اتصل بك"
+    "هل لديك أي مواهب مخفية، ما هي"،
+    "ما هي الكلمة التي تكرهها أكثر؟"،
+    "ما هو آخر فيديو شاهدته على اليوتيوب؟",
+    "ما هو آخر شيء قمت بالبحث عنه في جوجل"،
+    "من في هذه المجموعة تريد أن تتبادل الحياة معه لمدة أسبوع"
+    "ما هو الشيء الأكثر رعبا الذي حدث لك على الإطلاق"
+    "هل سبق لك أن أطلقت الريح وألقيت اللوم على شخص آخر"
+    "متى آخر مرة جعلت شخصًا آخر يبكي"
+    "هل سبق لك أن خدعت صديقًا"
+    "هل سبق لك أن رأيت جثة ميتة"
+    "أي من أفراد عائلتك يزعجك أكثر ولماذا"
+    "إذا كان عليك حذف تطبيق واحد من هاتفك، فما هو التطبيق الذي سيكون؟"
+    "ما هو التطبيق الذي تضيع فيه معظم الوقت"
+    "هل سبق لك أن تظاهرت بالمرض لتعود إلى المنزل من المدرسة"
+    "ما هو أكثر شيء محرج في غرفتك"
+    "ما هي العناصر الخمسة التي ستجلبها معك إذا علقت في جزيرة صحراوية"،
+    "هل سبق لك أن ضحكت بشدة لدرجة أنك تبولت في ملابسك"
+    "هل تشم رائحة الريح الخاصة بك"
+    "هل سبق لك أن تبولت على السرير أثناء النوم؟؟"،
+    "ما هو أكبر خطأ ارتكبته في حياتك"
+    "هل سبق لك أن غشيت في الامتحان"
+    "ما هو أسوأ شيء قمت به على الإطلاق"
+    "متى آخر مرة بكيت فيها"
+    ""من تحب أكثر من والديك""
+    "هل تضع إصبعك أحيانًا في أنفك؟"
+    "من كان معجبًا بك خلال أيام الدراسة"
+    "أخبرني بصراحة هل تحب أي فتى في هذه المجموعة"
+    "هل أحببت أحداً من قبل؟ إلى متى؟"،
+    "هل لديك صديقة/صديقة حميمة"، "ما هو أكبر مخاوفك؟"،
+    "هل سبق لك أن أحببت شخصًا ما وشعرت أن هذا الشخص معجب بك أيضًا؟",
+    "ما اسم صديقك السابق الذي كنت تحبه بهدوء؟",
+    "هل سرقت مال أمك أو مال أبيك"
+    "ما الذي يسعدك عندما تكون حزينا"
+    "هل تحب الشخص الموجود في هذه المجموعة؟ إذا كنت تحب من؟"،
+    "هل سبق لك أن خدعك الناس؟"،
+    "من هو أهم شخص في حياتك"
+    "ما هي الأشياء التي تفتخر بها هذا العام"،
+    "من هو الشخص الذي يستطيع أن يسعدك عندما تكون حزيناً"
+    "من هو الشخص الذي جعلك تشعر بعدم الراحة"
+    "هل كذبت على والديك من قبل"
+    "هل مازلت تحب حبيبك السابق"
+    "من تحب أن تلعب معه؟"،
+    "هل سبق لك أن سرقت شيئًا كبيرًا في حياتك؟ السبب؟",
+    "أذكر الحادثة التي تؤلمك والتي لا تزال تتذكرها"
+    "ما هي الإنجازات التي حصلت عليها هذا العام؟",
+    "ما هي أسوأ عادتك في المدرسة؟",
+    "هل تحب منشئ الروبوتات، زيون؟ ðŸ¤ £"،
+    "هل فكرت يومًا في الانتقام من معلمك؟",
+    "هل تحب رئيس الوزراء الحالي لبلدك"،
+    "ليس لديك خضار أو خضار"،
+    "لو كان بإمكانك أن تكون غير مرئي، ما هو أول شيء ستفعله"
+    "ما هو السر الذي أخفيته عن والديك"
+    "من تحبها بسرية"،
+    "من هو آخر شخص زحفت عليه على وسائل التواصل الاجتماعي"
+    "لو أعطاك الجني ثلاث أمنيات ماذا ستطلب"
+    "ما هو ندمك الأكبر"
+    "ما هو الحيوان الذي تعتقد أنك تشبهه أكثر"،
+    "كم صورة سيلفي تلتقط في اليوم"
+    "ما هو برنامج طفولتك المفضل"،
+    "لو كان بإمكانك أن تكون شخصية خيالية ليوم واحد، من ستختار؟"
+    "من الذي تراسله أكثر"،
+    "ما هي أكبر كذبة أخبرتها لوالديك"
+    "من هو حبيبك من الفنانين"،
+    "ما هو أغرب حلم حلمت به على الإطلاق"
+    "هل تلعب ببجي اذا ارسلت رقم هويتك"
 ]
               const xeontruth = truth[Math.floor(Math.random() * truth.length)]
               buffertruth = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
