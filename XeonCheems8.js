@@ -1347,11 +1347,11 @@ XeonBotInc.ev.emit('messages.upsert', msg)
 }
 
 switch (command) {
-case 'ttc': case 'ttt': case 'tictactoe': {
+case 'xo': case 'ttt': case 'tictactoe': {
             let TicTacToe = require("./lib/tictactoe")
             this.game = this.game ? this.game : {}
-            if (Object.values(this.game).find(room13 => room13.id.startsWith('tictactoe') && [room13.game.playerX, room13.game.playerO].includes(m.sender))) return replygcxeon(`You Are Still In The Game`)
-            let room13 = Object.values(this.game).find(room13 => room13.state === 'WAITING' && (text ? room13.name === text : true))
+            if (Object.values(this.game).find(room13 => الغرفة13.id.startsWith('اكس او') && [الغرفة13.game.playerX, الغرفة13.game.playerO].includes(m.sender))) return replygcxeon(`أنت لا تزال في اللعبة`)
+            let room13 = Object.values(this.game).find(room13 => الغرفة13.state === 'انتظر' && (text ? الغرفة13.name === text : true))
             if (room13) {
             room13.o = m.chat
             room13.game.playerO = m.sender
@@ -1377,9 +1377,9 @@ ${arr.slice(0, 3).join('')}
 ${arr.slice(3, 6).join('')}
 ${arr.slice(6).join('')}
 
-Waiting @${room13.game.currentTurn.split('@')[0]}
+منتظر @${room13.game.currentTurn.split('@')[0]}
 
-Type *surrender* to surrender and admit defeat`
+يكتب *surrender* للاستسلام والاعتراف بالهزيمة`
             if (room13.x !== room13.o) await XeonBotInc.sendText(room13.x, str, m, { mentions: parseMention(str) } )
             await XeonBotInc.sendText(room13.o, str, m, { mentions: parseMention(str) } )
             } else {
@@ -1417,7 +1417,7 @@ Type *surrender* to surrender and admit defeat`
             let timeout = 60000
             if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.sender))) replygcxeon(`أكمل لعبتك السابقة`)
 	    if (m.mentionedJid[0] === m.sender) return replygcxeon(`Can't play with myself !`)
-            if (!m.mentionedJid[0]) return replygcxeon(`_Who do you want to challenge?_\nTag the person..\n\nExample : ${prefix}suit @${owner}`, m.chat, { mentions: [owner[1] + '@s.whatsapp.net'] })
+            if (!m.mentionedJid[0]) return replygcxeon(`_من تريد تحديه?_\nضع علامة على الشخص..\n\nمثال : ${prefix}suit @${owner}`, m.chat, { mentions: [owner[1] + '@s.whatsapp.net'] })
             if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.mentionedJid[0]))) return replygcxeon(`الشخص الذي تتحداه يلعب دور شخص آخر :(`)
             let id = 'suit_' + new Date() * 1
             let caption = `_*SUIT PvP*_
