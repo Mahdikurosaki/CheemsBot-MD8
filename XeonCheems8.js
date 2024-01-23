@@ -1350,7 +1350,7 @@ switch (command) {
 case 'xo': case 'ttt': case 'tictactoe': {
             let TicTacToe = require("./lib/tictactoe")
             this.game = this.game ? this.game : {}
-            if (Object.values(this.game).find(room13 => الغرفة13.id.startsWith('اكس او') && [الغرفة13.game.playerX, الغرفة13.game.playerO].includes(m.sender))) return replygcxeon(`أنت لا تزال في اللعبة`)
+            if (Object.values(this.game).find(room13 => room13.id.startsWith('اكس او') && [room13.game.playerX, room13.game.playerO].includes(m.sender))) return replygcxeon(`أنت لا تزال في اللعبة`)
             let room13 = Object.values(this.game).find(room13 => الغرفة13.state === 'انتظر' && (text ? الغرفة13.name === text : true))
             if (room13) {
             room13.o = m.chat
@@ -1476,15 +1476,15 @@ replygcxeon(`Ba bye...`)
 await sleep(3000)
 process.exit()
 break
-case 'owner': {
+case 'مالك': {
 const repf = await XeonBotInc.sendMessage(from, { 
 contacts: { 
 displayName: `${list.length} Contact`, 
 contacts: list }, mentions: [sender] }, { quoted: m })
-XeonBotInc.sendMessage(from, { text : `Hi @${sender.split("@")[0]}, هنا مالكي الوسيم🐱‍🏍`, mentions: [sender]}, { quoted: repf })
+XeonBotInc.sendMessage(from, { text : `أهلاً @${sender.split("@")[0]}, هنا مالكي الوسيم😁`, mentions: [sender]}, { quoted: repf })
 }
 break
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'اوامر': case 'الاوامر': case 'list': case 'menu': case 'help': case '?': {
 	        let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let timestampe = speed()
@@ -1500,7 +1500,7 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 │مدة العرض : ${runtime(process.uptime())}
 │بوت : ${global.botname}
 │المالك رقم: ${ownernumber}
-│𝗣𝗿𝗲𝗳𝗶𝘅 :  لا بادئة 
+│بادئة :  لا بادئة 
 │وضع : ${XeonBotInc.public ? 'عام' : `الذات`}
 │اسم المضيف : ${os.hostname()}
 │منصة : ${os.platform()}
@@ -1517,25 +1517,25 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
    │✑  الرجاء كتابة *MENU*
    │✑  منح *BELOW*
 ┌└─────────────┈ ⳹
-│❏.كل القائمة (القائمة)
-│❏.قائمة التنزيل (م2)
-│❏.قائمة ممتعة(م18)
-│❏.aimenu (م3)
-│❏.قائمة المجموعة(م4)  
-│❏.قائمة المالك(م5) 
-│❏.القائمة الضوئية(م6)
-│❏.القائمة النصية للمحترفين(م7)
-│❏.ephoto360menu(م8)
-│❏.قائمة الأنمي (م9)
-│❏.nsfwmenu (م10)
-│❏.قائمة الصور العشوائية(م11)
-│❏.قائمة فيديو عشوائية(م12)
-│❏.قائمة الملصقات(م13)
-│❏.databasemenu(م14)
-│❏.قائمة الملاحقة(م15) 
-│❏.قائمة الأخطاء(م16)
-│❏.القائمة الأخرى(م17)
-└────────المطور=يوهان─────────┈ ⳹`
+│❏.كل القائمة* (القائمة)*
+│❏.قائمة التنزيل* (م2)*
+│❏.قائمة ممتعة* (م18)*
+│❏.قائمة الذكاء الإصطناعي* (م3)*
+│❏.قائمة المجموعة* (م4)*  
+│❏.قائمة المالك* (م5)* 
+│❏.القائمة الضوئية* (م6)*
+│❏.القائمة النصية للمحترفين* (م7)*
+│❏.*قائمة* ephoto 360(م8)
+│❏.قائمة الأنمي* (م9)*
+│❏.*قائمة* nsfw (م10)
+│❏.قائمة الصور العشوائية* (م11)*
+│❏.قائمة فيديو عشوائية* (م12)*
+│❏.قائمة الملصقات* (م13)*
+│❏.قائمة قاعدة البيانات* (م14)*
+│❏.قائمة الملاحقة* (م15)* 
+│❏.قائمة الأخطاء* (م16)*
+│❏.القائمة الأخرى* (م17)*
+└──────── *المطور=يوهان* ─────────┈ ⳹`
             let ments = [ownernya, me, mark]        
            XeonBotInc.sendMessage(from, { 
 text: xeonezy,
