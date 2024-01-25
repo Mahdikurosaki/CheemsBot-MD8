@@ -4210,7 +4210,7 @@ case 'qc': case'text': {
     }
     }
     break
-case 's': case 'sticker': case 'stiker': {
+case 's': case 'sticker': case 'ملصق': {
 if (!quoted) return replygcxeon(`إرسال/الرد على الصور/مقاطع الفيديو/الصور المتحركة مع التسميات التوضيحية ${prefix+command}\nمدة الفيديو 1-9 ثوان`)
 if (/image/.test(mime)) {
 let media = await quoted.download()
@@ -6344,19 +6344,19 @@ case 'gdrive': {
   }
 }
 break
-case 'invite': {
+case 'دعوة': {
 	if (!m.isGroup) return XeonStickGroup()
 	if (!isBotAdmins) return XeonStickBotAdmin()
-if (!text) return replygcxeon(`Enter the number you want to invite to the group\n\nExample :\n*${prefix + command}* 916909137213`)
-if (text.includes('+')) return replygcxeon(`Enter the number together without *+*`)
-if (isNaN(text)) return replygcxeon(`Enter only the numbers plus your country code without spaces`)
+if (!text) return replygcxeon(`أدخل الرقم الذي تريد دعوته إلى المجموعة\n\nمثال :\n*${prefix + command}* 22247072475`)
+if (text.includes('+')) return replygcxeon(`أدخل الرقم معا بدون *+*`)
+if (isNaN(text)) return replygcxeon(`أدخل الأرقام فقط بالإضافة إلى رمز بلدك بدون مسافات`)
 let group = m.chat
 let link = 'https://chat.whatsapp.com/' + await XeonBotInc.groupInviteCode(group)
       await XeonBotInc.sendMessage(text+'@s.whatsapp.net', {text: `≡ *GROUP INVITATION*\n\nA user invites you to join this group \n\n${link}`, mentions: [m.sender]})
         replygcxeon(` An invite link is sent to the user`) 
 }
 break
-case "xnxxdl": {
+case "ممنوع2": {
 	if (!isPrem) return replyprem(mess.premium)
 	if (!m.isGroup) return XeonStickGroup()
 	if (!AntiNsfw) return replygcxeon(mess.nsfw)
@@ -6372,7 +6372,7 @@ XeonBotInc.sendMessage(m.chat, { caption: `≡  *XNXX DL*
 ▢ *🎞️Quality:* ${xn.result.quality}`, video: {url: xn.result.files.high} }, { quoted: m })
 }
 break
-case 'xnxxsearch': {
+case 'ممنوع': {
 	if (!isPrem) return replyprem(mess.premium)
 	if (!m.isGroup) return XeonStickGroup()
 	if (!AntiNsfw) return replygcxeon(mess.nsfw)
@@ -6385,7 +6385,7 @@ case 'xnxxsearch': {
               }
               break
               case 'pint': {
-              	if (!text) return replygcxeon(`Enter Query`)
+              	if (!text) return replygcxeon(`أدخل الاستعلام`)
 XeonStickWait()
 let { pinterest } = require('./lib/scraper')
 anutrest = await pinterest(text)
@@ -6401,24 +6401,24 @@ case 'ringtone': {
 		XeonBotInc.sendMessage(m.chat, { audio: { url: result.audio }, fileName: result.title+'.mp3', mimetype: 'audio/mpeg' }, { quoted: m })
 	    }
 	    break
-	case 'genshin':
+	case 'غنشن':
 if (!text) return replygcxeon(`Which genshin are you lookin for?`)
 try {
 const genshin = require("genshin-api")
 a = text.toLowerCase();
 const anime = await genshin.Characters(text)
 let txt = ""
-txt += `🎀 *Name:* ${anime.name}\n`
-txt += `🎖️ *Title:* ${anime.title}\n`
-txt += `💠 *Vision:* ${anime.vision}\n`
-txt += `🏹 *Weapon:* ${anime.weapon}\n`
-txt += `💮 *Gender:* ${anime.gender}\n`
-txt += `🌏 *Nation:* ${anime.nation}\n`
-txt += `🪷 *Affiliation:* ${anime.affiliation}\n`
-txt += `🌟 *Rarity:* ${anime.rarity}\n`
-txt += `❄️ *Constellation:* ${anime.constellation}\n`
-txt += `📖 *Description:* ${anime.description}\n`
-txt += `🌐 *Url:* https://genshin-impact.fandom.com/wiki/${a}\n`
+txt += `🎀 *اسم:* ${anime.name}\n`
+txt += `🎖️ *عنوان:* ${anime.title}\n`
+txt += `💠 *رؤية:* ${anime.vision}\n`
+txt += `🏹 *سلاح:* ${anime.weapon}\n`
+txt += `💮 *جِنْس:* ${anime.gender}\n`
+txt += `🌏 *أُمّة:* ${anime.nation}\n`
+txt += `🪷 *انتساب:* ${anime.affiliation}\n`
+txt += `🌟 *ندرة:* ${anime.rarity}\n`
+txt += `❄️ *كوكبة:* ${anime.constellation}\n`
+txt += `📖 *وصف:* ${anime.description}\n`
+txt += `🌐 *رابط:* https://genshin-impact.fandom.com/wiki/${a}\n`
 urll = `https://api.genshin.dev/characters/${a}/portrait`
 await XeonBotInc.sendMessage(m.chat,{image:{url:urll}, caption:txt},{quoted:m})
 } catch (err) {
@@ -6461,27 +6461,27 @@ encmedia = await XeonBotInc.sendImageAsSticker(from, wifegerakx, m, { packname: 
 
 }
 break
-	case 'anime': {
-if (!text) return replygcxeon(`Which anime are you lookin for?`)
+	case 'انمي': {
+if (!text) return replygcxeon(`ما الأنمي الذي تبحث عنه؟?`)
 const malScraper = require('mal-scraper')
 XeonStickWait()
         const anime = await malScraper.getInfoFromName(text).catch(() => null)
-        if (!anime) return replygcxeon(`Could not find`)
+        if (!anime) return replygcxeon(`تعذر العثور عليه`)
 let animetxt = `
-🎀 *Title: ${anime.title}*
-🎋 *Type: ${anime.type}*
-🎐 *Premiered on: ${anime.premiered}*
-💠 *Total Episodes: ${anime.episodes}*
-📈 *Status: ${anime.status}*
-💮 *Genres: ${anime.genres}
-📍 *Studio: ${anime.studios}*
-🌟 *Score: ${anime.score}*
-💎 *Rating: ${anime.rating}*
-🏅 *Rank: ${anime.ranked}*
-💫 *Popularity: ${anime.popularity}*
-♦️ *Trailer: ${anime.trailer}*
-🌐 *URL: ${anime.url}*
-❄ *Description:* ${anime.synopsis}*`
+🎀 *عنوان: ${anime.title}*
+🎋 *نوع: ${anime.type}*
+🎐 *تم عرضه لأول مرة في: ${anime.premiered}*
+💠 *مجموع الحلقات: ${anime.episodes}*
+📈 *حالة: ${anime.status}*
+💮 *الأنواع: ${anime.genres}
+📍 *الاستوديو: ${anime.studios}*
+🌟 *سَجَّلَ: ${anime.score}*
+💎 *تصنيف: ${anime.rating}*
+🏅 *تقييم: ${anime.ranked}*
+💫 *شعبية: ${anime.popularity}*
+♦️ *اعلان ترويجي: ${anime.trailer}*
+🌐 *رابط: ${anime.url}*
+❄ *وصف:* ${anime.synopsis}*`
                 await XeonBotInc.sendMessage(m.chat,{image:{url:anime.picture}, caption:animetxt},{quoted:m})
                 }
                 break
