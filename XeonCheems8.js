@@ -1351,7 +1351,7 @@ case 'xo': case 'ttt': case 'tictactoe': {
             let TicTacToe = require("./lib/tictactoe")
             this.game = this.game ? this.game : {}
             if (Object.values(this.game).find(room13 => room13.id.startsWith('اكس او') && [room13.game.playerX, room13.game.playerO].includes(m.sender))) return replygcxeon(`أنت لا تزال في اللعبة`)
-            let room13 = Object.values(this.game).find(room13 => الغرفة13.state === 'انتظر' && (text ? الغرفة13.name === text : true))
+            let room13 = Object.values(this.game).find(room13 => room13.state === 'انتظر' && (text ? الغرفة13.name === text : true))
             if (room13) {
             room13.o = m.chat
             room13.game.playerO = m.sender
