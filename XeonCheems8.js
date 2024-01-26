@@ -1438,7 +1438,7 @@ ${arr.slice(6).join('')}
             }
             }
             break
-	case 'public': {
+	case 'عام': {
                 if (!XeonTheCreator) return XeonStickOwner()
                 XeonBotInc.public = true
                 replygcxeon('*ناجح في التغيير إلى الاستخدام العام*')
@@ -1450,7 +1450,7 @@ ${arr.slice(6).join('')}
                 replygcxeon('*ناجح في التغيير إلى الاستخدام الذاتي*')
             }
             break
-case 'rentbot': {
+case 'الإيجار': {
 if (m.isGroup) return XeonStickPrivate()
 
 rentfromxeon(XeonBotInc, m, from)
@@ -1470,7 +1470,7 @@ XeonBotInc.sendMessage(from,{text:te,mentions: [y], },{quoted:m})
 replygcxeon(`لا يوجد مستخدمون استأجروا الروبوت حتى الآن`)
 }
 break
-case 'shutdown':
+case 'اغلق':
 if (!XeonTheCreator) return XeonStickOwner()
 replygcxeon(`Ba bye...`)
 await sleep(3000)
@@ -1487,6 +1487,7 @@ break
 case 'اوامر': case 'الاوامر': case 'list': case 'menu': case 'help': case '?': {
 	        let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
+	    let videoUrl = 'https://telegra.ph/file/65a3da51ea80eb737bd9a.mp4'
             let timestampe = speed()
             let latensie = speed() - timestampe
             xeonezy = `┌─❖
