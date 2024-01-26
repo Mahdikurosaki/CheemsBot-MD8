@@ -1537,6 +1537,12 @@ case 'اوامر': case 'الاوامر': case 'list': case 'menu': case 'help':
 │❏.قائمة الأخطاء* (م16)*
 │❏.القائمة الأخرى* (م17)*
 └──────── *المطور=يوهان* ─────────┈ ⳹`
+	conn.sendMessage(m.chat, {
+        video: { url: videoUrl }, caption: str,
+  mentions: [m.sender,global.conn.user.jid],
+  gifPlayback: true,gifAttribution: 0
+    }, { quoted: m });
+};
             let ments = [ownernya, me, mark]        
            XeonBotInc.sendMessage(from, { 
 text: xeonezy,
