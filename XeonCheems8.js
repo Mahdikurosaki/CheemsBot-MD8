@@ -1487,7 +1487,6 @@ break
 case 'اوامر': case 'الاوامر': case 'list': case 'menu': case 'help': case '?': {
 	        let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
-	    let videoUrl = 'https://telegra.ph/file/65a3da51ea80eb737bd9a.mp4'
             let timestampe = speed()
             let latensie = speed() - timestampe
             xeonezy = `┌─❖
